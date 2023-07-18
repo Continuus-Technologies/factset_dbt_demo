@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: factset_entity_relationship_tree
+    columns:
+      - name: factset_entity_id
+        tests:
+          - not_null
+          - unique
+    tests:
+      - dbt_expectations.expect_table_row_count_to_equal_other_table:
+          compare_model: ref("stg_factset_data_management_solutions__dms_entity_structure")

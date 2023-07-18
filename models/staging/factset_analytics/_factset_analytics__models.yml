@@ -1,0 +1,13 @@
+version: 2
+# models:
+#   - name: stg_factset_analytics__eq_sector_attribution
+#     columns:
+#       - name: securityname
+#         tests:
+#           - not_null
+#       - name: symbol
+#         tests:
+#           - not_null
+#     tests:
+#       - dbt_expectations.expect_compound_columns_to_be_unique:
+#           column_list: ['securityname', 'symbol']

@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: factset_analytics
+    description: "https://www.factset.com/solutions/portfolio-analytics"
+    database: FACTSET_ANALYTICS_SAMPLE
+    schema: FDS
+
+    tables:
+      - name: EQ_SECTOR_ATTRIBUTION

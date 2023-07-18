@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: factset_data_management_solutions
+    description: "https://go.factset.com/marketplace/catalog/product/factset-data-management-solutions"
+    database: FACTSET_DATA_MANAGEMENT_SOLUTIONS_SAMPLE
+    schema: PUBLIC
+
+    tables:
+      - name: DMS_ENTITY_STRUCTURE

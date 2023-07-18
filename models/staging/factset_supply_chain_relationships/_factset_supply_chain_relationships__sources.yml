@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: factset_supply_chain_relationships
+    description: "https://go.factset.com/marketplace/catalog/product/factset-supply-chain-relationships"
+    database: FACTSET_SUPPLY_CHAIN_RELATIONSHIPS_SAMPLE
+    schema: PUBLIC
+
+    tables:
+      - name: SCR_RELATIONSHIPS
+      - name: SCR_TIER_2_SUPPLIERS
