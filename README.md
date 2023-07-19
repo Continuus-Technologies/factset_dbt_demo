@@ -7,6 +7,9 @@
 - Get the free FactSet data from the Snowflake Marketplace
   - Install to the default database in Snowflake
   - Grant the DBT role imported privileges to the FactSet shared databases
+    - FactSet Analytics (sample)
+    - FactSet Data Management Solutions (sample)
+    - FactSet Supply Chain Relationships (sample)
 - Create a new database called "factset_demo" within Snowflake
   - Grant the DBT role the following privileges on the "factset_demo" database
     - Create Schema
@@ -49,6 +52,9 @@ factset_demo:
   - FactSet Supply Chain Relationships (sample)
 - DBT project structure and configurations (dbt_project.yml)
   - Staging, Intermediate, Marts
+- Commonly used commands
+  - dbt deps (install/upgrades package dependencies)
+  - dbt build (compile, run, test)
 - Packages overview (packages.yml)
   - Versioning and installation (dbt deps)
 - Staging models to rename/tranform source data
@@ -56,13 +62,20 @@ factset_demo:
 - Intermediate models to aggregate internal models
 - Marts model for consumable data
 - Python example model
-  - 
+  - Python and SQL model interoperability
 - Tests overview (both through yml and sql)
 - Model contracts and enforcement
   - Data types and enforcement settings
-- Generation of documentation / lineage tracking
+- Source freshness tests
+
 ```shell
-dbt docs generate --profile factset_demo
+dbt source freshness
+```
+
+- Generation of documentation / lineage tracking
+
+```shell
+dbt docs generate
 ```
 
 ## Interactive Demo
